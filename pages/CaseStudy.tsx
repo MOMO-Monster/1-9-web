@@ -150,27 +150,54 @@ const CaseStudy: React.FC = () => {
           }
         })}
 
-        {/* MOCK IMAGE GENERATOR */}
-        {project.mockImageCount && (
-            <div className="space-y-8">
-                <div className="flex items-center gap-4">
-                    <h3 className="text-2xl font-display font-bold text-white uppercase tracking-tight">Project Assets</h3>
-                    <span className="text-[10px] font-mono text-zinc-500 border border-zinc-800 px-2 py-1 rounded">{project.mockImageCount} ITEMS</span>
-                </div>
-                <div className="grid grid-cols-1 gap-8">
-                    {Array.from({ length: project.mockImageCount }).map((_, i) => (
-                        <div key={`mock-${i}`} className="rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800">
-                             <img 
-                                src={`https://picsum.photos/seed/${project.id}-${i}/1200/800`} 
-                                alt={`Asset ${i + 1}`} 
-                                className="w-full h-auto opacity-90 hover:opacity-100 transition-opacity"
-                                loading="lazy"
-                             />
-                        </div>
-                    ))}
-                </div>
-            </div>
-        )}
+       {/* REAL PROJECT IMAGES */}
+{project.images && (
+  <div className="space-y-8">
+    <div className="flex items-center gap-4">
+      <h3 className="text-2xl font-display font-bold text-white uppercase tracking-tight">
+        Project Assets
+      </h3>
+      <span className="text-[10px] font-mono text-zinc-500 border border-zinc-800 px-2 py-1 rounded">
+        {project.images.length} ITEMS
+      </span>
+    </div>
+
+    <div className="grid grid-cols-1 gap-8">
+      {project.images.map((img, i) => (
+        <div
+          key={`img-${i}`}
+          className="rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800"
+        >
+          <img
+            src={img}
+            alt={`Project Image ${i + 1}`}
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
+{/* MOCK IMAGE GENERATOR (fallback for other projects) */}
+{!project.images && project.mockImageCount && (
+  <div className="space-y-8">
+    <div className="grid grid-cols-1 gap-8">
+      {Array.from({ length: project.mockImageCount }).map((_, i) => (
+        <div key={`mock-${i}`} className="rounded-xl overflow-hidden bg-zinc-900 border border-zinc-800">
+          <img
+            src={`https://picsum.photos/seed/${project.id}-${i}/1200/800`}
+            alt={`Asset ${i + 1}`}
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+)}
+
       </div>
 
       {/* Footer - Scroll to Top */}

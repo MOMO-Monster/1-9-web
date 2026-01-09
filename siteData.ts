@@ -33,10 +33,57 @@ if (brandingProjects.length > 0) {
     title: "微笑宝贝计划",
     client: "公益品牌活动全案及品牌IP设计",
     year: "2025",
-    mockImageCount: 44, // 44 images as requested
+    
     summary: "这是一次关于儿童口腔健康的品牌公益尝试。挑战在于如何通过设计降低儿童对医疗环境的天然恐惧感。我从「游戏化体验」切入，设计了名为「牙牙大作战」的品牌IP形象与闯关地图，最终形成了从视觉规范到线下物料的完整全案。",
     tags: ["BRANDING", "IP DESIGN", "SOCIAL GOOD"],
-    coverImage: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=2000&auto=format&fit=crop"
+    coverImage: "/images/yesmile/cover.webp",
+
+    images: [
+    "/images/yesmile/poster-01.webp",
+    "/images/yesmile/poster-02.webp",
+    "/images/yesmile/poster-03.webp",
+    "/images/yesmile/poster-04.webp",
+    "/images/yesmile/poster-05.webp",
+    "/images/yesmile/poster-06.webp",
+    "/images/yesmile/poster-07.webp",
+    "/images/yesmile/poster-08.webp",
+    "/images/yesmile/poster-09.webp",
+    "/images/yesmile/poster-10.webp",
+    "/images/yesmile/poster-11.webp",
+    "/images/yesmile/poster-12.webp",
+    "/images/yesmile/poster-gif.webp",
+    "/images/yesmile/poster-13.webp",
+    "/images/yesmile/poster-14.webp",
+    "/images/yesmile/poster-15.webp",
+    "/images/yesmile/poster-16.webp",
+    "/images/yesmile/poster-17.webp",
+    "/images/yesmile/poster-18.webp",
+    "/images/yesmile/poster-19.webp",
+    "/images/yesmile/poster-20.webp",
+    "/images/yesmile/poster-21.webp",
+    "/images/yesmile/poster-22.webp",
+    "/images/yesmile/poster-23.webp",
+    "/images/yesmile/poster-24.webp",
+    "/images/yesmile/poster-25.webp",
+    "/images/yesmile/poster-26.webp",
+    "/images/yesmile/poster-27.webp",
+    "/images/yesmile/poster-28.webp",
+    "/images/yesmile/poster-29.webp",
+    "/images/yesmile/poster-30.webp",
+    "/images/yesmile/poster-31.webp",
+    "/images/yesmile/poster-32.webp",
+    "/images/yesmile/poster-33.webp",
+    "/images/yesmile/poster-34.webp",
+    "/images/yesmile/poster-35.webp",
+    "/images/yesmile/poster-36.webp",
+    "/images/yesmile/poster-37.webp",
+    "/images/yesmile/poster-38.webp",
+    "/images/yesmile/poster-39.webp",
+    "/images/yesmile/poster-40.webp",
+    "/images/yesmile/poster-41.webp",
+    "/images/yesmile/poster-42.webp",
+    "/images/yesmile/poster-43.webp"
+  ]
   };
 }
 
@@ -70,7 +117,7 @@ export const siteData = {
       description: "Branding / Logo / Campaign / Illustration",
       ctaText: "向下滑动查看更多作品",
       // Changed to a scenic landscape (foggy mountains)
-      bgImage: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=2674&auto=format&fit=crop", 
+      bgImage: "/images/home-banner.webp", 
       noiseTexture: "https://grainy-gradients.vercel.app/noise.svg"
     },
     marquee: [
@@ -180,7 +227,7 @@ export const siteData = {
     hero: {
       titlePrefix: "用设计",
       titleHighlight: "解决实际业务问题",
-      portraitImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1064&auto=format&fit=crop",
+      portraitImage: "/images/about-me.webp",
       introPrimary: "你好，我是 Lillian，一名品牌与视觉设计师。",
       introSecondary: "擅长品牌设计、Logo、插画与运营物料视觉整合，关注设计的故事性与商业落地。",
       introTertiary: "欢迎一起创造好看的品牌。",
